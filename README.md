@@ -1,59 +1,121 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🛒 ShopX — Multi Vendor E-commerce Platform
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+## 🚀 Overview
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**ShopX** is a scalable, enterprise-grade multi-vendor e-commerce platform designed to simulate real-world marketplaces like Amazon and Daraz.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+It provides a complete ecosystem for **customers, vendors, and administrators**, powered by a robust backend architecture and modern frontend technologies.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## ✨ Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 👤 Customer
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* Smart product browsing & filtering
+* Cart, Wishlist & Compare system
+* Order tracking & purchase history
+* Reviews & ratings
 
-## Laravel Sponsors
+### 🏪 Vendor
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+* Vendor onboarding & KYC verification
+* Product management (physical & digital)
+* Discounts & campaigns
+* Earnings & withdrawal system
 
-### Premium Partners
+### 🛡️ Admin
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+* Full platform management
+* Vendor approval system
+* Coupon & flash sale management
+* CMS (Blog, Ads, Settings)
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🧠 Architecture
 
-## Code of Conduct
+```mermaid
+graph TD
+    A[Client - React / Blade] --> B[Laravel Backend API]
+    B --> C[Authentication (Sanctum)]
+    B --> D[Business Logic]
+    D --> E[Database - MySQL]
+    D --> F[Payment Gateways]
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 💳 Payment Integration
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+* PayPal
+* Stripe
+* RazorPay
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🧱 Tech Stack
+
+**Backend**
+
+* Laravel
+* REST APIs
+* MySQL
+
+**Frontend**
+
+* React.js / Blade
+* Tailwind CSS / Bootstrap
+
+**Security**
+
+* Laravel Sanctum / Passport
+* Role-Based Access Control (RBAC)
+
+---
+
+## 📸 Screenshots
+
+---
+
+## 🎥 Demo
+
+---
+
+## ⚡ Installation
+
+```bash
+git clone https://github.com/jafar-madadi26/shopx.git
+cd shopx
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate --seed
+npm install && npm run dev
+php artisan serve
+```
+
+---
+
+## 🎯 Future Improvements
+
+* Microservices architecture
+* Docker support
+* CI/CD pipeline
+* Elasticsearch integration
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please fork the repo and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---

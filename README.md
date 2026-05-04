@@ -37,16 +37,7 @@ It provides a complete ecosystem for **customers, vendors, and administrators**,
 
 ## 🧠 Architecture
 
-```mermaid
-graph TD
-    A[Client - React / Blade] --> B[Laravel Backend API]
-    B --> C[Authentication (Sanctum)]
-    B --> D[Business Logic]
-    D --> E[Database - MySQL]
-    D --> F[Payment Gateways]
-```
-
----
+> 🚧 This section will be updated with a detailed system architecture diagram after completing the core implementation of the platform.
 
 ## 💳 Payment Integration
 
